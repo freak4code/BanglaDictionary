@@ -67,10 +67,16 @@ public class MessageReceive extends FirebaseMessagingService {
         String url = data.get(URL);
         String remove = data.get(REMOVE);
 
-        if (Integer.valueOf(remove) == -1) {
-            sendNotification(title, message);
+        if (Integer.parseInt(remove) == -1) {
+            assert url != null;
+            if (!url.equals("NO")) {
+                sendNotification(title, message, "url", url.trim());
+            } else {
+                sendNotification(title, message, "", "");
+            }
 
-        } else if (Integer.valueOf(remove) == prefs.getInt(Constant.INSTANCE.getID(), -1)) {
+
+        } else if (Integer.parseInt(remove) == prefs.getInt(Constant.INSTANCE.getID(), -1)) {
             prefs.edit().putBoolean(Constant.INSTANCE.getIS_LOGIN(), false).apply();
             prefs.edit().putBoolean(Constant.INSTANCE.getFETCH_USER(), false).apply();
             prefs.edit().putInt(Constant.INSTANCE.getID(), -1).apply();
@@ -82,7 +88,7 @@ public class MessageReceive extends FirebaseMessagingService {
             startActivity(i);
 
 
-        } else if (Integer.valueOf(remove) == 0) {
+        } else if (Integer.parseInt(remove) == 0) {
             prefs.edit().putBoolean(Constant.INSTANCE.getIS_LOGIN(), false).apply();
             prefs.edit().putBoolean(Constant.INSTANCE.getFETCH_USER(), false).apply();
             prefs.edit().putInt(Constant.INSTANCE.getID(), -1).apply();
@@ -102,14 +108,14 @@ public class MessageReceive extends FirebaseMessagingService {
         // TODO: Implement this method to send token to your app server.
     }
 
-    private void sendNotification(String title, String message) {
+    private void sendNotification(String title, String message, String isUrl, String url) {
         Intent resultIntent = new Intent(getApplicationContext(), SplashActivity.class);
         NotificationVO notificationVO = new NotificationVO();
         notificationVO.setTitle(title);
         notificationVO.setMessage(message);
         notificationVO.setIconUrl("");
-        notificationVO.setAction("");
-        notificationVO.setActionDestination("");
+        notificationVO.setAction(isUrl);
+        notificationVO.setActionDestination(url);
         NotificationUtils notificationUtils = new NotificationUtils(getApplicationContext());
         notificationUtils.displayNotification(notificationVO, resultIntent);
         notificationUtils.playNotificationSound();
