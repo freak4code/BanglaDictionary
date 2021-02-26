@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background">
+
+                <TextView
+                    android:id="@+id/one"
+                    style="@style/word_label"
+                    android:text="ভুক্তি:" />
+
+                <TextView
+                    android:id="@+id/wordName"
+                    style="@style/word_detail"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/two"
+                    style="@style/word_label"
+                    android:text="উচ্চারণ:" />
+
+                <TextView
+                    android:id="@+id/wordUccharon"
+                    style="@style/word_detail"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/three"
+                    style="@style/word_label"
+                    android:text="ব্যুৎপত্তি:" />
+
+                <TextView
+                    android:id="@+id/wordButpotti"
+                    style="@style/word_detail"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/five"
+                    style="@style/word_label"
+                    android:text="অর্থ:" />
+
+                <TextView
+
+                    android:id="@+id/wordOrtho"
+                    style="@style/word_detail"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/four"
+                    style="@style/word_label"
+                    android:text="স্ত্রীবাচক:" />
+
+                <TextView
+                    android:id="@+id/striBachok"
+                    style="@style/word_detail"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/six"
+                    style="@style/word_label"
+                    android:text="তুলনীয়:" />
+
+                <TextView
+                    android:id="@+id/wordTuloniyo"
+                    style="@style/word_detail"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/seven"
+                    style="@style/word_label"
+                    android:text="প্রয়োগবাক্য:" />
+
+                <TextView
+                    android:id="@+id/wordProyogbakko"
+                    style="@style/word_detail"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/eight"
+                    style="@style/word_label"
+                    android:text="পরিভাষা:" />
+
+                <TextView
+                    android:id="@+id/wordPorivasha"
+                    style="@style/word_detail"
+                    android:text="" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/creditId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/padding_half"
+            android:gravity="center"
+            android:maxLines="4"
+            android:padding="@dimen/padding_half"
+            android:text="সম্বন্ধে জানুন"
+            android:textSize="12sp" />
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

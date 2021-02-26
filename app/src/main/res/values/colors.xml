@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_200">#D8DFC9</color>
+    <color name="red_500">#D8DFC9</color>
+    <color name="red_700">#D8DFC9</color>
+    <color name="tealy_200">#DFDFC9</color>
+    <color name="tealy_700">#DFDFC9</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#07574C</color>
+    <color name="highlight">#03A9F4</color>
+    <color name="link_text">#DD684A</color>
+    <color name="text_color">#DFDFC9</color>
+</resources>

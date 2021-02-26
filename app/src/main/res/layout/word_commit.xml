@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:elevation="6dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/one"
+                    style="@style/edit_label"
+                    android:text="শব্দের আদ্যক্ষর" />
+
+                <Spinner
+                    android:id="@+id/letterSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/two"
+                    style="@style/edit_label"
+                    android:text="ভুক্তি" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/background"
+                    android:textColorHint="@color/text_color">
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background"
+                        android:hint="ভুক্তি"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/three"
+                    style="@style/edit_label"
+                    android:text="উচ্চারণ" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/background"
+                    android:textColorHint="@color/text_color">
+
+                    <EditText
+                        android:id="@+id/wordUccharon"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@color/background"
+                        android:gravity="start"
+                        android:hint="উচ্চারণ"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/four"
+                    style="@style/edit_label"
+                    android:text="ব্যুৎপত্তি" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/background"
+                    android:textColorHint="@color/text_color">
+
+                    <EditText
+                        android:id="@+id/wordButpotti"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@color/background"
+                        android:gravity="start"
+                        android:hint="ব্যুৎপত্তি"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/six"
+                    style="@style/edit_label"
+                    android:text="অর্থ" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/background"
+                    android:textColorHint="@color/text_color">
+
+                    <EditText
+                        android:id="@+id/wordOrtho"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@color/background"
+                        android:gravity="start"
+                        android:hint="অর্থ"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/five"
+                    style="@style/edit_label"
+                    android:text="স্ত্রীবাচক" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/background"
+                    android:textColorHint="@color/text_color">
+
+                    <EditText
+                        android:id="@+id/striBachok"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@color/background"
+                        android:gravity="start"
+                        android:hint="স্ত্রীবাচক"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/seven"
+                    style="@style/edit_label"
+                    android:text="তুলনীয়" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/background"
+                    android:textColorHint="@color/text_color">
+
+                    <EditText
+                        android:id="@+id/wordTuloniyo"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@color/background"
+                        android:gravity="start"
+                        android:hint="তুলনীয়"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/eight"
+                    style="@style/edit_label"
+                    android:text="প্রয়োগবাক্য" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/background"
+                    android:textColorHint="@color/text_color">
+
+                    <EditText
+                        android:id="@+id/wordProyogbakko"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@color/background"
+                        android:gravity="start"
+                        android:hint="প্রয়োগবাক্য"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nine"
+                    style="@style/edit_label"
+                    android:text="পরিভাষা" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/background"
+                    android:textColorHint="@color/text_color">
+
+                    <EditText
+                        android:id="@+id/wordPorivasha"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@color/background"
+                        android:gravity="start"
+                        android:hint="পরিভাষা"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ten"
+                    style="@style/edit_label"
+                    android:text="লিস্টিং (0 , 1)" />
+
+                <Spinner
+                    android:id="@+id/visibilitySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="8dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/commit"
+                    style="@style/button"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/delete"
+                    style="@style/button"
+                    android:text="Delete" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BanglaDictionary" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red_500</item>
+        <item name="colorPrimaryVariant">@color/red_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/tealy_200</item>
+        <item name="colorSecondaryVariant">@color/tealy_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:popupMenuStyle">@style/MainActionBar</item>
+        <item name="titleTextAppearance">@color/text_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="Theme.BanglaDictionary.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.BanglaDictionary.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BanglaDictionary.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="word_detail" parent="Theme.BanglaDictionary">
+        <item name="android:background">@color/background</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">start</item>
+
+        <item name="android:textSize">@dimen/detail_text_size</item>
+        <item name="android:paddingTop">@dimen/padding_half</item>
+        <item name="android:paddingBottom">@dimen/padding_half</item>
+        <item name="android:paddingStart">@dimen/padding_half</item>
+        <item name="android:paddingEnd">@dimen/padding_half</item>
+    </style>
+
+    <style name="word_label" parent="Theme.BanglaDictionary">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">@dimen/detail_text_size</item>
+        <item name="android:padding">@dimen/padding_half</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="edit_label" parent="Theme.BanglaDictionary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/detail_text_size</item>
+        <item name="android:padding">@dimen/padding_half</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:textColor">@color/text_color</item>
+
+    </style>
+
+    <style name="button" parent="Theme.BanglaDictionary">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/padding_half</item>
+        <item name="android:textSize">@dimen/detail_text_size</item>
+        <item name="android:padding">@dimen/padding_half</item>
+        <item name="android:background">@color/text_color</item>
+        <item name="android:textColor">@color/background</item>
+
+
+    </style>
+
+    <style name="MainActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="AppTheme.Popup" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/text_color</item>
+
+
+    </style>
+
+</resources>

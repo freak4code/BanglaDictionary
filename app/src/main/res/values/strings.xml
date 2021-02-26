@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">প্রমিত বাংলা শব্দকোষ</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="wordr_image">Word Image</string>
+    <string name="text_retry">Try Again</string>
+    <string name="addNew">Add New Word</string>
+    <string name="logOut">Log Out</string>
+    <string name="updateWord">Update Word</string>
+    <string name="word_detail">Word Detail</string>
+    <string name="user_profle">User Profile</string>
+    <string name="wordName">নাম: </string>
+    <string name="wordExtraName">অন্যান্য নাম: </string>
+
+
+    <string name="fill_all">ফিল্ড খালি রাখে যাবে না !</string>
+    <string name="search">Search</string>
+    <string name="totalWord">সর্বমোট শব্দ যুক্ত করা হয়েছে %s টি</string>
+    <string name="totalUser">যুক্ত করছেন %s জন</string>
+    <string name="about">About</string>
+</resources>

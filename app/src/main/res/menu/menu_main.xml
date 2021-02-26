@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="snnafi.bangla.dictionary.admin.MainActivity">
+    <!--    <item-->
+    <!--        android:id="@+id/addNew"-->
+    <!--        android:icon="@android:drawable/ic_media_play"-->
+    <!--        android:orderInCategory="100"-->
+    <!--        android:title="@string/addNew"-->
+    <!--        app:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:orderInCategory="100"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/userProfile"
+        android:orderInCategory="100"
+        android:title="@string/user_profle"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logOut"
+        android:orderInCategory="100"
+        android:title="@string/logOut"
+        app:showAsAction="never" />
+</menu>
