@@ -25,4 +25,7 @@
     <string name="totalWord">সর্বমোট শব্দ যুক্ত করা হয়েছে %s টি</string>
     <string name="totalUser">যুক্ত করছেন %s জন</string>
     <string name="about">About</string>
+    <string name="addedWord">%s টি</string>
+    <string name="addToday">আজকে</string>
+    <string name="addAllTime">সর্বমোট</string>
 </resources>

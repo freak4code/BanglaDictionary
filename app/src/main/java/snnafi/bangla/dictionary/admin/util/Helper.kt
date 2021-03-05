@@ -110,7 +110,7 @@ object Helper {
             .replace("\\bবি\\b".toRegex(), "বিশেষ্য")
             .replace("\\bবিণ\\b".toRegex(), "বিশেষণ")
             .replace("\\bসর্ব\\b".toRegex(), "সর্বনাম").replace("\\bক্রি\\b".toRegex(), "ক্রিয়া")
-            .replace("লা".toRegex(),"লাতিন")
+            .replace("\\bলা\\b".toRegex(),"লাতিন")
             .replace(".", "")
 
 
