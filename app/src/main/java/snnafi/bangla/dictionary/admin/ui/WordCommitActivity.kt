@@ -45,6 +45,7 @@ class WordCommitActivity : AppCompatActivity(), OnItemSelectedListener {
         binding = WordCommitBinding.inflate(layoutInflater)
         setContentView(binding.root)
         prefs = PreferenceManager.getDefaultSharedPreferences(this)
+        // If new word, wordId carries the [letter id] and if old word, wordId carries the [word id]
         wordId = intent.getIntExtra(Constant.WORD_ID, 0)
         isNew = intent.getBooleanExtra(Constant.ID, false)
         binding.commit.isEnabled = false
